@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
     <style>
         body{
             background-color: #282828;
             display: block;
         }
 h1 {
-  color: rgb(255, 84, 84);
-  background-color: rgb(255, 206, 80);
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(255,  84,  84);
+  background-color: rgb(255,  206,  80);
+  font-family:Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif;
   text-align: center;
 }
 
 .navigation{
 border-radius: 5px; height: 50px;
 }
+
 .navigation_bar{
   display: grid;
   grid-template-columns: auto auto auto;
@@ -28,28 +29,21 @@ border-radius: 5px; height: 50px;
 }
 
 .page{
-  background-color: rgb(57, 57, 57);
-  margin-left: 0px;
-  margin-right: 0px;
+  background-color: rgb(57,  57,  57);
+  margin-left: 250px;
+  margin-right: 250px;
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 10px;
 }
-@media screen and (min-width:750px) {
-            .page {
-               margin-left: 250px;
-               margin-right: 250px;
-               margin-top: 0px;
-               margin-bottom: 0px;
-            }
-        }
+
 .intro{
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+font-family: Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif; 
 color: coral; 
 font-size: 25px;
 }
 p{
-    font-family:'Times New Roman', Times, serif;
+    font-family:'Times New Roman',  Times,  serif;
     font-size: 30px;
 }
 img{
@@ -58,32 +52,25 @@ img{
 .img2{
     height: 300px;
 }
-.div1{
-grid-column: 1;
-grid-row: 1;
-margin-left: 0px;
-margin-top: 10px;
-}
-.div2{
-width: 400px;
-padding-right: 20px;
-}
+
 .titre{
-  color: rgb(255, 133, 93);
-  background-color: rgb(2, 100, 186);
+  color: rgb(255,  133,  93);
+  background-color: rgb(2,  100,  186);
   padding: 5px;
   font-weight: bold;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family:Verdana,  Geneva,  Tahoma,  sans-serif;
 }
 .texte{
-  color:aliceblue
+  color:aliceblue;
+  font-family:'Times New Roman',  Times,  serif;
+  font-size: 25px;
 }
 .légende{
   color: bisque;
   font-weight: bold;
 }
 .outro{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+  font-family: Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif; 
   font-size: 25px;
   color: crimson;
 }
@@ -93,15 +80,13 @@ padding-right: 20px;
   color: aqua; 
   background-color: coral; 
   font-weight: bold; 
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Trebuchet MS',  'Lucida Sans Unicode',  'Lucida Grande',  'Lucida Sans',  Arial,  sans-serif;
 }
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black;
-  text-align: center;
-  height: 30px; 
-  font-family:'Times New Roman', Times, serif;
+  text-align: justify;
+  font-family:'Times New Roman',  Times,  serif;
   font-size: 25px;
   border: none;
   border-radius: 5px;
@@ -109,50 +94,49 @@ padding-right: 20px;
   background-color: whitesmoke;
   color: brown;
   font-weight: bold;
+  margin: 3px;
+  padding: 3px;
+
 }
 
 .tooltip .tooltiptext {
-  vertical-align: center;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-auto-rows: minmax(100px, auto);
   visibility: hidden;
-  width: 750px;
-  background-color: #555;
+  background-color: rgb(80, 80, 80);
   color: #fff;
-  text-align: center;
+  text-align: left;
   border-radius: 6px;
   padding: 5px 0;
   position: absolute;
   z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -410px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext2 {
-  vertical-align: center;
+  padding: 15px;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-auto-rows: minmax(100px, auto);
-  visibility: hidden;
-  width: 750px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
+  grid-template-rows: 150px auto;
+  row-gap: 20px;
+  min-width: 500px;
+  max-width: 550px;
   left: 50%;
-  margin-left: -410px;
-  opacity: 0;
-  transition: opacity 0.3s;
+	transform: translateX(-25%);
+  justify-content: center;
 }
 
+.div1{
+width: auto;
+height: auto;
+position: static;
+padding: 5px;
+}
+img {
+  height: 150px;
+  width: auto;
+}
+.div2{
+min-width: 500px;
+max-width: 550px;
+height: auto;
+position: static;
+margin-top: 10px ;
+
+}
 .tooltip .tooltiptext::after {
   position: absolute;
   top: 100%;
@@ -161,11 +145,13 @@ padding-right: 20px;
   border-width: 5px;
   border-style: solid;
   border-color: #555 transparent transparent transparent;
+  opacity: 0.4;
 }
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+
 }
 .logo_akatsuki{
   height: 50px;
@@ -173,7 +159,7 @@ padding-right: 20px;
 }
 .OUTRO
 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif;
     font-size: 20px;
     color: aliceblue;
 }
@@ -182,13 +168,57 @@ padding-right: 20px;
   grid-template-columns: 3em 9fr ;
   grid-gap: 10px;
 }
-.div2{
+
+.outro_div{
   display: inline-block;
-  padding-top: 20px;
+  padding-top: 5px;
   width: 100%;
 }
 
+@media screen and (max-width:750px) {
+            .page {
+               margin-left: 0px;
+               margin-right: 0px;
+               margin-top: 0px;
+               margin-bottom: 0px;
+            }
+            .tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: rgb(80, 80, 80);
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  padding: 15px;
+  display: grid;
+  grid-template-rows: 150px auto;
+  row-gap: 20px;
+  max-width: 250px;
+  left: 50%;
+	transform: translateX(-25%);
+}
 
+.div1{
+width: 300px;
+max-height: 300px;
+position: static;
+padding: 5px;
+}
+img{
+  max-width: 250px;
+  max-height: 150px;
+}
+.div2{
+max-width: 250px;
+height: auto;
+position: static;
+margin-top: 10px ;
+background-color: aquamarine;
+
+}
+}
     </style>
 
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ArjunaK07/Reccueil-des-textes/main/logo%20akatsuki.png"/>
@@ -264,41 +294,41 @@ padding-right: 20px;
                      III/ (l.20-24) D'une évasion à l'autre </br>
           </p>
 
- <p class="texte">
+ <div class="texte">
 
 J’aperçus 
 
-<button class="tooltip" style="background-color:rgb(5, 125, 141); color:indianred;"> les clefs <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/1.png"></div><div class="div2"> symboles de liberté, des Grieux fait progresser son récit par étapes. Il cite un à un les objets qui symbolisent son emprisonnement et dont il devient maître. </div></span></button>
+<div class="tooltip" style="background-color:rgb(5, 125, 141); color:indianred;"> les clefs <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/1.png"></div><div class="div2"> symboles de liberté, des Grieux fait progresser son récit par étapes. Il cite un à un les objets qui symbolisent son emprisonnement et dont il devient maître. </div></span></div>
 
 qui étaient sur la table ; je les pris, et je le priai de me suivre en faisant le moins de bruit qu’il pourrait.  
 Il fut obligé de s’y résoudre. À mesure que nous avancions et qu’il ouvrait 
 
-<button class="tooltip" style="background-color:rgb(5, 125, 141); color:indianred;"> une porte, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/1.png"></div><div class="div2"> symboles de liberté, des Grieux fait progresser son récit par étapes. Il cite un à un les objets qui symbolisent son emprisonnement et dont il devient maître. </div></span></button>
+<div class="tooltip" style="background-color:rgb(5, 125, 141); color:indianred;"> une porte, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/1.png"></div><div class="div2"> symboles de liberté, des Grieux fait progresser son récit par étapes. Il cite un à un les objets qui symbolisent son emprisonnement et dont il devient maître. </div></span></div>
 
 il me répétait avec un soupir : 
 
-<button class="tooltip" style="background-color:whitesmoke; color:indianred;"> « Ah ! mon fils, ah ! qui l’aurait jamais cru ? — Point de bruit, mon père, » <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/2.jpg"></div><div class="div2"> interjections, questions rhétoriques, courts dialogues, phrases exclamatives et nominales : Les échanges brefs traduisent la surprise, l'émotion, et  si le rythme rapide de l'évasion et la hardiesse de des Grieux. </div></span></button>
+<div class="tooltip" style="background-color:whitesmoke; color:indianred;"> « Ah ! mon fils, ah ! qui l’aurait jamais cru ? — Point de bruit, mon père, » <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/2.jpg"></div><div class="div2"> interjections, questions rhétoriques, courts dialogues, phrases exclamatives et nominales : Les échanges brefs traduisent la surprise, l'émotion, et  si le rythme rapide de l'évasion et la hardiesse de des Grieux. </div></span></div>
 
 
-<button class="tooltip" style="background-color:whitesmoke; color:indianred;"> répétais-je de mon côté à tout moment. <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/3.jpg"></div><div class="div2"> des Grieux rapporte ses propres paroles et sa propre histoire en y apportant une tension dramatique à travers sa subjectivité. </div></span></button>
+<div class="tooltip" style="background-color:whitesmoke; color:indianred;"> répétais-je de mon côté à tout moment. <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/3.jpg"></div><div class="div2"> des Grieux rapporte ses propres paroles et sa propre histoire en y apportant une tension dramatique à travers sa subjectivité. </div></span></div>
 
 
 Enfin nous arrivâmes à 
 
-<button class="tooltip" style="background-color:rgb(5, 125, 141); color:indianred;"> une espèce de barrière <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/1.png"></div><div class="div2"> symboles de liberté, des Grieux fait progresser son récit par étapes. Il cite un à un les objets qui symbolisent son emprisonnement et dont il devient maître. </div></span></button>
+<div class="tooltip" style="background-color:rgb(5, 125, 141); color:indianred;"> une espèce de barrière <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/1.png"></div><div class="div2"> symboles de liberté, des Grieux fait progresser son récit par étapes. Il cite un à un les objets qui symbolisent son emprisonnement et dont il devient maître. </div></span></div>
 
 qui est avant la grande 
 
-<button class="tooltip" style="background-color:rgb(5, 125, 141); color:indianred;"> porte <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/1.png"></div><div class="div2"> symboles de liberté, des Grieux fait progresser son récit par étapes. Il cite un à un les objets qui symbolisent son emprisonnement et dont il devient maître. </div></span></button>
+<div class="tooltip" style="background-color:rgb(5, 125, 141); color:indianred;"> porte <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/1.png"></div><div class="div2"> symboles de liberté, des Grieux fait progresser son récit par étapes. Il cite un à un les objets qui symbolisent son emprisonnement et dont il devient maître. </div></span></div>
 
 de la rue. 
 
-<button class="tooltip" style="background-color:rgb(126, 1, 1); color:rgb(92, 186, 205);"> Je me croyais déjà libre, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/4.jpg"></div><div class="div2"> imparfait (temps du récit au passé), parallélisme. Des Grieux, brillant orateur, crée du suspens dans son récit. Il montre qu'il était encore naïf à ce moment du récit, pensant que la chance lui souriait, mais annonce le drame à venir en parlant du pistolet. </div></span></button>
+<div class="tooltip" style="background-color:rgb(126, 1, 1); color:rgb(92, 186, 205);"> Je me croyais déjà libre, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/4.jpg"></div><div class="div2"> imparfait (temps du récit au passé), parallélisme. Des Grieux, brillant orateur, crée du suspens dans son récit. Il montre qu'il était encore naïf à ce moment du récit, pensant que la chance lui souriait, mais annonce le drame à venir en parlant du pistolet. </div></span></div>
 
 
-<button class="tooltip" style="background-color:whitesmoke; color:indianred;"> et j’étais derrière le père, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/5.jpeg"></div><div class="div2"> symbole de l'autorité paternelle, qu'elle soit religieuse ou biologique. </div></span></button>
+<div class="tooltip" style="background-color:whitesmoke; color:indianred;"> et j’étais derrière le père, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/5.jpeg"></div><div class="div2"> symbole de l'autorité paternelle, qu'elle soit religieuse ou biologique. </div></span></div>
 
-<button class="tooltip" style="background-color:rgb(126, 1, 1); color:rgb(92, 186, 205);"> tenant ma chandelle d’une main et mon pistolet de l’autre. <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/4.jpg"></div><div class="div2"> imparfait (temps du récit au passé), parallélisme. Des Grieux, brillant orateur, crée du suspens dans son récit. Il montre qu'il était encore naïf à ce moment du récit, pensant que la chance lui souriait, mais annonce le drame à venir en parlant du pistolet. </div></span></button>
+<div class="tooltip" style="background-color:rgb(126, 1, 1); color:rgb(92, 186, 205);"> tenant ma chandelle d’une main et mon pistolet de l’autre. <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/4.jpg"></div><div class="div2"> imparfait (temps du récit au passé), parallélisme. Des Grieux, brillant orateur, crée du suspens dans son récit. Il montre qu'il était encore naïf à ce moment du récit, pensant que la chance lui souriait, mais annonce le drame à venir en parlant du pistolet. </div></span></div>
 
 
 </br></br>
@@ -309,94 +339,94 @@ de la rue.
 
 Pendant qu’il 
 
-<button class="tooltip" style="background-color:rgb(46, 0, 0); color:aliceblue;"> s’empressait <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/6.jpg"></div><div class="div2"> Présent de narration : dramatisation du récit par l'intervention d'un troisième personnage, opposant potentiel à des Grieux. Ce personnage n'est désigné que par son niveau social inférieur au héros ce qui minimise déjà son importance humaine aux yeux de ce dernier. </div></span></button>
+<div class="tooltip" style="background-color:rgb(46, 0, 0); color:aliceblue;"> s’empressait <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/6.jpg"></div><div class="div2"> Présent de narration : dramatisation du récit par l'intervention d'un troisième personnage, opposant potentiel à des Grieux. Ce personnage n'est désigné que par son niveau social inférieur au héros ce qui minimise déjà son importance humaine aux yeux de ce dernier. </div></span></div>
 
 
 d’ouvrir, un domestique qui 
 
-<button class="tooltip" style="background-color:rgb(46, 0, 0); color:aliceblue;"> couchait <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/6.jpg"></div><div class="div2"> Présent de narration : dramatisation du récit par l'intervention d'un troisième personnage, opposant potentiel à des Grieux. Ce personnage n'est désigné que par son niveau social inférieur au héros ce qui minimise déjà son importance humaine aux yeux de ce dernier. </div></span></button>
+<div class="tooltip" style="background-color:rgb(46, 0, 0); color:aliceblue;"> couchait <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/6.jpg"></div><div class="div2"> Présent de narration : dramatisation du récit par l'intervention d'un troisième personnage, opposant potentiel à des Grieux. Ce personnage n'est désigné que par son niveau social inférieur au héros ce qui minimise déjà son importance humaine aux yeux de ce dernier. </div></span></div>
 
 dans une chambre voisine, entendant le bruit de quelques verrous, 
 
-<button class="tooltip" style="background-color:rgb(46, 0, 0); color:aliceblue;"> se lève <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/6.2.jpg"></div><div class="div2"> Présent de narration : dramatisation du récit par l'intervention d'un troisième personnage, opposant potentiel à des Grieux. Ce personnage n'est désigné que par son niveau social inférieur au héros ce qui minimise déjà son importance humaine aux yeux de ce dernier. </div></span></button>
+<div class="tooltip" style="background-color:rgb(46, 0, 0); color:aliceblue;"> se lève <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/6.2.jpg"></div><div class="div2"> Présent de narration : dramatisation du récit par l'intervention d'un troisième personnage, opposant potentiel à des Grieux. Ce personnage n'est désigné que par son niveau social inférieur au héros ce qui minimise déjà son importance humaine aux yeux de ce dernier. </div></span></div>
 
 et 
 
-<button class="tooltip" style="background-color:rgb(46, 0, 0); color:aliceblue;"> met <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/6.2.jpg"></div><div class="div2"> Présent de narration : dramatisation du récit par l'intervention d'un troisième personnage, opposant potentiel à des Grieux. Ce personnage n'est désigné que par son niveau social inférieur au héros ce qui minimise déjà son importance humaine aux yeux de ce dernier. </div></span></button>
+<div class="tooltip" style="background-color:rgb(46, 0, 0); color:aliceblue;"> met <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/6.2.jpg"></div><div class="div2"> Présent de narration : dramatisation du récit par l'intervention d'un troisième personnage, opposant potentiel à des Grieux. Ce personnage n'est désigné que par son niveau social inférieur au héros ce qui minimise déjà son importance humaine aux yeux de ce dernier. </div></span></div>
 
 la tête à sa 
 
-<button class="tooltip" style="background-color:rgb(5, 125, 141); color:indianred;"> porte. <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/1.png"></div><div class="div2"> symboles de liberté, des Grieux fait progresser son récit par étapes. Il cite un à un les objets qui symbolisent son emprisonnement et dont il devient maître. </div></span></button>
+<div class="tooltip" style="background-color:rgb(5, 125, 141); color:indianred;"> porte. <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/1.png"></div><div class="div2"> symboles de liberté, des Grieux fait progresser son récit par étapes. Il cite un à un les objets qui symbolisent son emprisonnement et dont il devient maître. </div></span></div>
 
 Le bon père le 
 
-<button class="tooltip" style="background-color:rgb(16, 5, 141); color:rgb(101, 253, 246);"> crut <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/7.jpg"></div><div class="div2"> modalisateurs, termes de jugement, axiologie négative. Des Grieux reconnaît la logique du prêtre mais insiste sur son incompétence dans le combat qui est avancée comme une explication au danger. Cette explication se substitue au fait que des Grieux ait une arme à feu. </div></span></button>
+<div class="tooltip" style="background-color:rgb(16, 5, 141); color:rgb(101, 253, 246);"> crut <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/7.jpg"></div><div class="div2"> modalisateurs, termes de jugement, axiologie négative. Des Grieux reconnaît la logique du prêtre mais insiste sur son incompétence dans le combat qui est avancée comme une explication au danger. Cette explication se substitue au fait que des Grieux ait une arme à feu. </div></span></div>
 
 apparemment capable de m’arrêter. Il lui ordonna avec beaucoup 
 
-<button class="tooltip" style="background-color:rgb(16, 5, 141); color:rgb(101, 253, 246);"> d’imprudence <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/7.jpg"></div><div class="div2"> modalisateurs, termes de jugement, axiologie négative. Des Grieux reconnaît la logique du prêtre mais insiste sur son incompétence dans le combat qui est avancée comme une explication au danger. Cette explication se substitue au fait que des Grieux ait une arme à feu. </div></span></button>
+<div class="tooltip" style="background-color:rgb(16, 5, 141); color:rgb(101, 253, 246);"> d’imprudence <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/7.jpg"></div><div class="div2"> modalisateurs, termes de jugement, axiologie négative. Des Grieux reconnaît la logique du prêtre mais insiste sur son incompétence dans le combat qui est avancée comme une explication au danger. Cette explication se substitue au fait que des Grieux ait une arme à feu. </div></span></div>
 
 de venir à son secours. C’était 
 
-<button class="tooltip" style="background-color: whitesmoke; color:indianred;"> un puissant coquin, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/17.jpg"></div><div class="div2"> Si le domestique brille par sa force physique le nom « coquin » renvoie aussi à un jugement social péjoratif et un mépris de classe qui pemettent à des Grieux de se dédouaner du meurtre à venir : en tant qu'aristocrate il n'a tué qu'un homme du peuple. </div></span></button>
+<div class="tooltip" style="background-color: whitesmoke; color:indianred;"> un puissant coquin, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/17.jpg"></div><div class="div2"> Si le domestique brille par sa force physique le nom « coquin » renvoie aussi à un jugement social péjoratif et un mépris de classe qui pemettent à des Grieux de se dédouaner du meurtre à venir : en tant qu'aristocrate il n'a tué qu'un homme du peuple. </div></span></div>
 
 qui 
 
-<button class="tooltip" style="background-color: rgb(24, 193, 255); color:aliceblue;"> s’élança <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/8.jpg"></div><div class="div2"> Enchaînement de verbes d'action au passé simple, scène d'action romanesque pleine de rebondissements dans laquelle des Grieux affronte un domestique qui ne fait que son travail. </div></span></button>
+<div class="tooltip" style="background-color: rgb(24, 193, 255); color:aliceblue;"> s’élança <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/8.jpg"></div><div class="div2"> Enchaînement de verbes d'action au passé simple, scène d'action romanesque pleine de rebondissements dans laquelle des Grieux affronte un domestique qui ne fait que son travail. </div></span></div>
 
 sur moi sans balancer. Je ne le
 
-<button class="tooltip" style="background-color: rgb(24, 193, 255); color:aliceblue;"> marchandai <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/8.jpg"></div><div class="div2"> Enchaînement de verbes d'action au passé simple, scène d'action romanesque pleine de rebondissements dans laquelle des Grieux affronte un domestique qui ne fait que son travail. </div></span></button>
+<div class="tooltip" style="background-color: rgb(24, 193, 255); color:aliceblue;"> marchandai <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/8.jpg"></div><div class="div2"> Enchaînement de verbes d'action au passé simple, scène d'action romanesque pleine de rebondissements dans laquelle des Grieux affronte un domestique qui ne fait que son travail. </div></span></div>
 
 point; je lui 
 
-<button class="tooltip" style="background-color: rgb(24, 193, 255); color:aliceblue;"> lâchai <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/8.jpg"></div><div class="div2"> Enchaînement de verbes d'action au passé simple, scène d'action romanesque pleine de rebondissements dans laquelle des Grieux affronte un domestique qui ne fait que son travail. </div></span></button>
+<div class="tooltip" style="background-color: rgb(24, 193, 255); color:aliceblue;"> lâchai <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/8.jpg"></div><div class="div2"> Enchaînement de verbes d'action au passé simple, scène d'action romanesque pleine de rebondissements dans laquelle des Grieux affronte un domestique qui ne fait que son travail. </div></span></div>
 
 le coup au milieu de la poitrine.
 
 
-<button class="tooltip" style="background-color: whitesmoke; color:indianred;"> « Voilà de quoi vous êtes cause, mon père, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/9.jpg"></div><div class="div2"> modalisateur de jugement, des Grieux veut justifier son action et plaide, d'une certaine façon, son innocence en accusant les autres. Il fait ici le procès des hommes, évalue la responsabilité de chacun : le père est la cause de la mort du domestique et si des Grieux y a lui aussi contribué, c'est en raison de sa passion aliénante. </div></span></button>
+<div class="tooltip" style="background-color: whitesmoke; color:indianred;"> « Voilà de quoi vous êtes cause, mon père, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/9.jpg"></div><div class="div2"> modalisateur de jugement, des Grieux veut justifier son action et plaide, d'une certaine façon, son innocence en accusant les autres. Il fait ici le procès des hommes, évalue la responsabilité de chacun : le père est la cause de la mort du domestique et si des Grieux y a lui aussi contribué, c'est en raison de sa passion aliénante. </div></span></div>
 
 
 dis-je assez 
 
-<button class="tooltip" style="background-color: rgb(255, 82, 24); color:aliceblue;"> fièrement <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/10.jpg"></div><div class="div2"> ajoutai-je en le poussant vers la dernière porte. Il n'osa refuser de l'ouvrir. » Adverbe, ironie, modalisateur, des Grieux semble arrêter de se poser des questions morales et gagner en assurance dans le crime. </div></span></button>
+<div class="tooltip" style="background-color: rgb(255, 82, 24); color:aliceblue;"> fièrement <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/10.jpg"></div><div class="div2"> ajoutai-je en le poussant vers la dernière porte. Il n'osa refuser de l'ouvrir. » Adverbe, ironie, modalisateur, des Grieux semble arrêter de se poser des questions morales et gagner en assurance dans le crime. </div></span></div>
 
 à mon guide. 
 
-<button class="tooltip" style="background-color: rgb(255, 82, 24); color:aliceblue;"> Mais que cela ne vous empêche point d’achever, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/10.jpg"></div><div class="div2"> ajoutai-je en le poussant vers la dernière porte. Il n'osa refuser de l'ouvrir. » Adverbe, ironie, modalisateur, des Grieux semble arrêter de se poser des questions morales et gagner en assurance dans le crime. </div></span></button>
+<div class="tooltip" style="background-color: rgb(255, 82, 24); color:aliceblue;"> Mais que cela ne vous empêche point d’achever, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/10.jpg"></div><div class="div2"> ajoutai-je en le poussant vers la dernière porte. Il n'osa refuser de l'ouvrir. » Adverbe, ironie, modalisateur, des Grieux semble arrêter de se poser des questions morales et gagner en assurance dans le crime. </div></span></div>
 
 » ajoutai-je en le poussant vers la dernière 
 
-<button class="tooltip" style="background-color:rgb(5, 125, 141); color:indianred;"> porte. <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/1.png"></div><div class="div2"> symboles de liberté, des Grieux fait progresser son récit par étapes. Il cite un à un les objets qui symbolisent son emprisonnement et dont il devient maître. </div></span></button>
+<div class="tooltip" style="background-color:rgb(5, 125, 141); color:indianred;"> porte. <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/1.png"></div><div class="div2"> symboles de liberté, des Grieux fait progresser son récit par étapes. Il cite un à un les objets qui symbolisent son emprisonnement et dont il devient maître. </div></span></div>
 
 Il n’osa refuser de l’ouvrir. Je sortis 
 
-<button class="tooltip" style="background-color:rgb(0, 92, 42); color:rgb(255, 109, 109);"> heureusement, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/11.jpg"></div><div class="div2"> lexique mélioratif de la fraternité, des Grieux appartient désormais à la famille des marginaux; </div></span></button>
+<div class="tooltip" style="background-color:rgb(0, 92, 42); color:rgb(255, 109, 109);"> heureusement, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/11.jpg"></div><div class="div2"> lexique mélioratif de la fraternité, des Grieux appartient désormais à la famille des marginaux; </div></span></div>
 
 et je trouvai 
 
-<button class="tooltip" style="background-color:rgb(0, 92, 42); color:rgb(255, 109, 109);"> à quatre pas <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/11.jpg"></div><div class="div2"> lexique mélioratif de la fraternité, des Grieux appartient désormais à la famille des marginaux; </div></span></button>
+<div class="tooltip" style="background-color:rgb(0, 92, 42); color:rgb(255, 109, 109);"> à quatre pas <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/11.jpg"></div><div class="div2"> lexique mélioratif de la fraternité, des Grieux appartient désormais à la famille des marginaux; </div></span></div>
 
 Lescaut qui m’attendait avec deux amis, suivant 
 
-<button class="tooltip" style="background-color:rgb(0, 92, 42); color:rgb(255, 109, 109);"> sa promesse. <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/11.jpg"></div><div class="div2"> lexique mélioratif de la fraternité, des Grieux appartient désormais à la famille des marginaux; </div></span></button>
+<div class="tooltip" style="background-color:rgb(0, 92, 42); color:rgb(255, 109, 109);"> sa promesse. <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/11.jpg"></div><div class="div2"> lexique mélioratif de la fraternité, des Grieux appartient désormais à la famille des marginaux; </div></span></div>
 
 </br></br>
 
 Nous nous éloignâmes. Lescaut me demanda s’il n’avait pas entendu tirer un pistolet. 
 
-<button class="tooltip" style="background-color:rgb(30, 66, 88); color:rgb(255, 255, 109);"> « C’est votre faute, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/12.jpg"></div><div class="div2"> jugement de valeur, des Grieux se justifie une dernière fois en accusant son complice, le frère de Manon. </div></span></button>
+<div class="tooltip" style="background-color:rgb(30, 66, 88); color:rgb(255, 255, 109);"> « C’est votre faute, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/12.jpg"></div><div class="div2"> jugement de valeur, des Grieux se justifie une dernière fois en accusant son complice, le frère de Manon. </div></span></div>
 
 lui dis-je ; 
 
-<button class="tooltip" style="background-color:rgb(30, 66, 88); color:rgb(255, 255, 109);"> pourquoi me l’apportiez-vous chargé ? » <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/12.jpg"></div><div class="div2"> jugement de valeur, des Grieux se justifie une dernière fois en accusant son complice, le frère de Manon. </div></span></button>
+<div class="tooltip" style="background-color:rgb(30, 66, 88); color:rgb(255, 255, 109);"> pourquoi me l’apportiez-vous chargé ? » <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/12.jpg"></div><div class="div2"> jugement de valeur, des Grieux se justifie une dernière fois en accusant son complice, le frère de Manon. </div></span></div>
 
-<button class="tooltip" style="background-color:rgb(70, 88, 30); color:rgb(255, 184, 109);"> Cependant <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/13.jpg"></div><div class="div2"> Connecteur logique d'opposition, lexique mélioratif, nom propre évoquant l'incarcération. Des Grieux abandonne son questionnement moral en revendiquant une nouvelle attitude marginale. Il justifie ses exactions en montrant que la société et la Fortune l'obligent à agir ainsi. </div></span></button>
+<div class="tooltip" style="background-color:rgb(70, 88, 30); color:rgb(255, 184, 109);"> Cependant <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/13.jpg"></div><div class="div2"> Connecteur logique d'opposition, lexique mélioratif, nom propre évoquant l'incarcération. Des Grieux abandonne son questionnement moral en revendiquant une nouvelle attitude marginale. Il justifie ses exactions en montrant que la société et la Fortune l'obligent à agir ainsi. </div></span></div>
 
 je le 
 
-<button class="tooltip" style="background-color:rgb(70, 88, 30); color:rgb(255, 184, 109);"> remerciai <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/13.jpg"></div><div class="div2"> Connecteur logique d'opposition, lexique mélioratif, nom propre évoquant l'incarcération. Des Grieux abandonne son questionnement moral en revendiquant une nouvelle attitude marginale. Il justifie ses exactions en montrant que la société et la Fortune l'obligent à agir ainsi. </div></span></button>
+<div class="tooltip" style="background-color:rgb(70, 88, 30); color:rgb(255, 184, 109);"> remerciai <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/13.jpg"></div><div class="div2"> Connecteur logique d'opposition, lexique mélioratif, nom propre évoquant l'incarcération. Des Grieux abandonne son questionnement moral en revendiquant une nouvelle attitude marginale. Il justifie ses exactions en montrant que la société et la Fortune l'obligent à agir ainsi. </div></span></div>
 
 d’avoir eu cette précaution, sans laquelle j’étais sans doute à Saint-Lazare pour longtemps.
 
@@ -406,47 +436,47 @@ d’avoir eu cette précaution, sans laquelle j’étais sans doute à Saint-Laz
 
 </br></br>
 
-<button class="tooltip" style="background-color:rgb(255, 184, 109); color:rgb(70, 88, 30);"> Nous allâmes passer la nuit <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/14.jpg"></div><div class="div2"> Après la tension du meurtre le récit propose une accalmie narrative nécessaire au rythme dramatique. Cette pause n'est constituée que d'une phrase relativement courte. Le récit d'aventure doit être rapide et intense. </div></span></button>
+<div class="tooltip" style="background-color:rgb(255, 184, 109); color:rgb(70, 88, 30);"> Nous allâmes passer la nuit <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/14.jpg"></div><div class="div2"> Après la tension du meurtre le récit propose une accalmie narrative nécessaire au rythme dramatique. Cette pause n'est constituée que d'une phrase relativement courte. Le récit d'aventure doit être rapide et intense. </div></span></div>
 
 
 chez un traiteur, où je me 
 
-<button class="tooltip" style="background-color:rgb(255, 184, 109); color:rgb(70, 88, 30);"> remis un peu de la mauvaise chère <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/14.jpg"></div><div class="div2"> Après la tension du meurtre le récit propose une accalmie narrative nécessaire au rythme dramatique. Cette pause n'est constituée que d'une phrase relativement courte. Le récit d'aventure doit être rapide et intense. </div></span></button>
+<div class="tooltip" style="background-color:rgb(255, 184, 109); color:rgb(70, 88, 30);"> remis un peu de la mauvaise chère <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/14.jpg"></div><div class="div2"> Après la tension du meurtre le récit propose une accalmie narrative nécessaire au rythme dramatique. Cette pause n'est constituée que d'une phrase relativement courte. Le récit d'aventure doit être rapide et intense. </div></span></div>
 
 que j’avais faite 
 
-<button class="tooltip" style="background-color:rgb(255, 184, 109); color:rgb(70, 88, 30);"> depuis près de trois mois. <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/14.jpg"></div><div class="div2"> Après la tension du meurtre le récit propose une accalmie narrative nécessaire au rythme dramatique. Cette pause n'est constituée que d'une phrase relativement courte. Le récit d'aventure doit être rapide et intense. </div></span></button>
+<div class="tooltip" style="background-color:rgb(255, 184, 109); color:rgb(70, 88, 30);"> depuis près de trois mois. <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/14.jpg"></div><div class="div2"> Après la tension du meurtre le récit propose une accalmie narrative nécessaire au rythme dramatique. Cette pause n'est constituée que d'une phrase relativement courte. Le récit d'aventure doit être rapide et intense. </div></span></div>
 
 
 
 Je 
 
-<button class="tooltip" style="background-color:rgb(115, 59, 0); color:rgb(185, 255, 32);"> ne <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/15.jpg"></div><div class="div2"> redondance, insistance sur la souffrance causée par le caractère incomplet de la libération : la joie ne peut exister qu'avec Manon. </div></span></button>
+<div class="tooltip" style="background-color:rgb(115, 59, 0); color:rgb(185, 255, 32);"> ne <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/15.jpg"></div><div class="div2"> redondance, insistance sur la souffrance causée par le caractère incomplet de la libération : la joie ne peut exister qu'avec Manon. </div></span></div>
 
 pus 
 
-<button class="tooltip" style="background-color:rgb(115, 59, 0); color:rgb(185, 255, 32);"> néanmoins m’y livrer au plaisir ; <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/15.jpg"></div><div class="div2"> redondance, insistance sur la souffrance causée par le caractère incomplet de la libération : la joie ne peut exister qu'avec Manon. </div></span></button>
+<div class="tooltip" style="background-color:rgb(115, 59, 0); color:rgb(185, 255, 32);"> néanmoins m’y livrer au plaisir ; <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/15.jpg"></div><div class="div2"> redondance, insistance sur la souffrance causée par le caractère incomplet de la libération : la joie ne peut exister qu'avec Manon. </div></span></div>
 
 je 
 
-<button class="tooltip" style="background-color:rgb(115, 59, 0); color:rgb(185, 255, 32);"> souffrais mortellement <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/15.jpg"></div><div class="div2"> redondance, insistance sur la souffrance causée par le caractère incomplet de la libération : la joie ne peut exister qu'avec Manon. </div></span></button>
+<div class="tooltip" style="background-color:rgb(115, 59, 0); color:rgb(185, 255, 32);"> souffrais mortellement <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/15.jpg"></div><div class="div2"> redondance, insistance sur la souffrance causée par le caractère incomplet de la libération : la joie ne peut exister qu'avec Manon. </div></span></div>
 
 dans Manon. « Il faut 
 
-<button class="tooltip" style="background-color:rgb(56, 116, 255); color:rgb(255, 181, 32);"> la délivrer, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/16.jpg"></div><div class="div2"> Parallélisme entre l'évasion de Manon et de des Grieux : la liberté de des Grieux n'a de sens que pour permettre celle de Manon. </div></span></button>
+<div class="tooltip" style="background-color:rgb(56, 116, 255); color:rgb(255, 181, 32);"> la délivrer, <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/16.jpg"></div><div class="div2"> Parallélisme entre l'évasion de Manon et de des Grieux : la liberté de des Grieux n'a de sens que pour permettre celle de Manon. </div></span></div>
 
 
 dis-je à mes amis. Je n’ai 
 
-<button class="tooltip" style="background-color:rgb(56, 116, 255); color:rgb(255, 181, 32);"> souhaité la liberté <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/16.jpg"></div><div class="div2"> Parallélisme entre l'évasion de Manon et de des Grieux : la liberté de des Grieux n'a de sens que pour permettre celle de Manon. </div></span></button>
+<div class="tooltip" style="background-color:rgb(56, 116, 255); color:rgb(255, 181, 32);"> souhaité la liberté <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/16.jpg"></div><div class="div2"> Parallélisme entre l'évasion de Manon et de des Grieux : la liberté de des Grieux n'a de sens que pour permettre celle de Manon. </div></span></div>
 
 que dans cette vue. Je vous demande 
 
-<button class="tooltip" style="background-color:rgb(255, 56, 76); color:rgb(230, 230, 230);"> le secours de votre adresse : <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/18.jpg"></div><div class="div2"> réalisme de l'aide que demande des Grieux mais si hyperboles, roman d'aventure complexe: à la fois réaliste et chevaleresque des Grieux de présente comme un amant galant au sens de la courtoisie a mais à la psychologie excessive : on voit ici s'exprimer le caractère ravage enant de la passion amoureuse. </div></span></button>
+<div class="tooltip" style="background-color:rgb(255, 56, 76); color:rgb(230, 230, 230);"> le secours de votre adresse : <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/18.jpg"></div><div class="div2"> réalisme de l'aide que demande des Grieux mais si hyperboles, roman d'aventure complexe: à la fois réaliste et chevaleresque des Grieux de présente comme un amant galant au sens de la courtoisie a mais à la psychologie excessive : on voit ici s'exprimer le caractère ravage enant de la passion amoureuse. </div></span></div>
 
 pour moi,
 
-<button class="tooltip" style="background-color:rgb(255, 56, 76); color:rgb(230, 230, 230);"> j’y emploierai jusqu’à ma vie. » <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/18.jpg"></div><div class="div2"> réalisme de l'aide que demande des Grieux mais si hyperboles, roman d'aventure complexe: à la fois réaliste et chevaleresque des Grieux de présente comme un amant galant au sens de la courtoisie a mais à la psychologie excessive : on voit ici s'exprimer le caractère ravage enant de la passion amoureuse. </div></span></button>
+<div class="tooltip" style="background-color:rgb(255, 56, 76); color:rgb(230, 230, 230);"> j’y emploierai jusqu’à ma vie. » <span class="tooltiptext"><div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-6-Manon-Lescaut-Evasion/main/18.jpg"></div><div class="div2"> réalisme de l'aide que demande des Grieux mais si hyperboles, roman d'aventure complexe: à la fois réaliste et chevaleresque des Grieux de présente comme un amant galant au sens de la courtoisie a mais à la psychologie excessive : on voit ici s'exprimer le caractère ravage enant de la passion amoureuse. </div></span></div>
 
 </br></br>
 
@@ -454,7 +484,9 @@ pour moi,
 
 </br></br>
 
-<p class="légende">
+</div>
+ 
+ <p class="légende">
   Histoire du chevalier des Grieux et de Manon Lescaut, Abbé Prévost, 1753, Première partie.
 </p>
 
@@ -482,9 +514,9 @@ Comment est formé le mot « Saint-Lazare » ? </br>
             </p>
 </p>
 
- <button class="tooltip" style="background-color: chartreuse; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color:indianred;">
+ <div class="tooltip" style="background-color: chartreuse; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color:indianred;">
     Procédés Littéraires et Stylistiques = 19
-</button>
+</div>
 
 </br></br>
 
@@ -505,11 +537,11 @@ Nous nous éloignâmes. Lescaut me demanda s’il n’avait pas entendu tirer un
 
     <div class="source">
 
-      <div class="div1">
+      <div class="intro_div">
         <a href="https://arjunak07.github.io/Accueil-Premiere/"> <img class="logo_akatsuki" src="https://raw.githubusercontent.com/ArjunaK07/Reccueil-des-textes/main/logo%20akatsuki.png"> </a>
       </div>
     
-      <div class="div2">
+      <div class="outro_div">
         <span class="OUTRO">
           FAIT PAR L'AKATSUKI DES CODEURS, PROPULSÉ PAR LE LYCÉE ANDRÉ MALRAUX
         </span>
